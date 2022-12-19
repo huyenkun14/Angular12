@@ -2,7 +2,8 @@
     <h2>Chào Bạn, {{ name }}!</h2>
     <p>Đây là nội dung home</p>
     <input type="text" value="{{ name }}" title="Đây Là {{ name }}">
-    <br>
-    <br>
+    <br><br>
     <input type="text" [value]="name" [title]="'Đây là ' + name">
+    <h2 *ngIf="age < 16">Bạn chưa đủ tuổi đăng kí</h2>
+    <h2 *ngIf="age >= 16">Bạn đủ tuổi đăng kí</h2>
 </div>
