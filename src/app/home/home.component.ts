@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   public name = 'Huyền';
   public age = 20;
+  public name2 = 'Khánh Huyền';
+
+  public submit(): void {
+    console.log('Bạn đã đăng kí thành công.')
+  }
 }
